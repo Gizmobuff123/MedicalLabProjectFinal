@@ -8,13 +8,13 @@ public JButton GoBacktoTest=new JButton();
 	
 	
 	public JLabel Testid=new JLabel();
-	public JLabel TestName=new JLabel();
+	//public JLabel TestName=new JLabel();
 	public JLabel Testcode=new JLabel();
 	public JLabel Customerid=new JLabel();
 	
 
 	public JTextField Testidtext=new JTextField();
-	public JTextField TestNametext=new JTextField();
+	//public JTextField TestNametext=new JTextField();
 	public JTextField Testcodetext=new JTextField();
 	public JTextField Customeridtext=new JTextField();
 	
@@ -40,17 +40,17 @@ public void interface7()
 	Testid.setBounds(50, 100, 100, 55);
 	Testidtext.setBounds(200, 100, 100, 55);
 	
-	TestName.setText("Name:");
-	TestName.setBounds(50, 220, 100, 55);
-	TestNametext.setBounds(200,220,100,55);
+	//TestName.setText("Name:");
+	//TestName.setBounds(50, 220, 100, 55);
+	//TestNametext.setBounds(200,220,100,55);
 	
 	Testcode.setText("Test Code");
-	Testcode.setBounds(50, 360, 100, 55);
-	Testcodetext.setBounds(200,360,100,55);
+	Testcode.setBounds(50, 220, 100, 55);
+	Testcodetext.setBounds(200,220,100,55);
 	
 	Customerid.setText("Customer id:");
-	Customerid.setBounds(50, 480, 100, 55);
-	Customeridtext.setBounds(200,480,100,55);
+	Customerid.setBounds(50, 360, 100, 55);
+	Customeridtext.setBounds(200,360,100,55);
 	
 	
 	AddTest.setText("Add Test");
@@ -66,11 +66,11 @@ public void interface7()
 	this.setLayout(null);
 	this.add(GoBacktoTest);
 	this.add(Testid);
-	this.add(TestName);
+	//this.add(TestName);
 	this.add(Testcode);
 	this.add(Customerid);
 	this.add(Testidtext);
-	this.add(TestNametext);
+	//this.add(TestNametext);
 	this.add(Testcodetext);
 	this.add(Customeridtext);
 	this.add(AddTest);
