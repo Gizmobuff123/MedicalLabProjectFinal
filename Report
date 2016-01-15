@@ -1,0 +1,55 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.Report;
+
+public class Report extends JFrame
+{
+	public JButton GoBacktoMainui=new JButton();
+	public JButton AddReport=new JButton();
+	public JButton UpdateReport=new JButton();
+	public JButton DeleteReport=new JButton();
+	
+	
+public Report() throws HeadlessException 
+	{
+		
+		super();
+		interface14();
+	}
+public void interface14()
+{
+	
+	GoBacktoMainui.setText("Back");
+	GoBacktoMainui.setBounds(30,30,70,45);
+	
+	AddReport.setText("New Report");
+	AddReport.setBounds(150,100,150,55);
+	
+	UpdateReport.setText("Update Report");
+	UpdateReport.setBounds(150,200,150,55);
+	
+	DeleteReport.setText("Delete Report ");
+	DeleteReport.setBounds(150,300,150,55);
+	this.setSize(410,410);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoMainui);
+	this.add(AddReport);
+	this.add(UpdateReport);
+	this.add(DeleteReport);
+}
+	
+
+
+
+
+	
+	public static void main(String[] args) 
+	{
+		Report ui=new Report();
+	}	
+
+}
