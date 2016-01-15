@@ -1,0 +1,44 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.Customer;
+
+public class Customer extends JFrame
+{
+	public JButton GoBacktoMainui=new JButton();
+	public JButton AddCustomer=new JButton();
+	public JButton UpdateCustomer=new JButton();
+	public JButton DeleteCustmer=new JButton();
+	
+	
+public Customer() throws HeadlessException 
+	{
+		
+		super();
+		interface2();
+	}
+public void interface2()
+{
+	
+	GoBacktoMainui.setText("Back");
+	GoBacktoMainui.setBounds(30,30,70,45);
+	
+	AddCustomer.setText("New Customer");
+	AddCustomer.setBounds(150,100,150,55);
+	
+	UpdateCustomer.setText("Update Cutomer");
+	UpdateCustomer.setBounds(150,200,150,55);
+
+	DeleteCustmer.setText("Delete Custmer Record");
+	DeleteCustmer.setBounds(150,300,150,55);
+	this.setSize(410,410);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoMainui);
+	this.add(AddCustomer);
+	this.add(UpdateCustomer);
+	this.add(DeleteCustmer);
+}
+	
