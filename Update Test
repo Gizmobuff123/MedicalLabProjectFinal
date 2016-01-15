@@ -1,0 +1,92 @@
+package Interfaces;
+
+import java.awt.HeadlessException;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import Interfaces.UpdateTest;
+
+public class UpdateTest extends JFrame 
+{
+	public JButton GoBacktoTest=new JButton();
+	
+	public JLabel Testid=new JLabel();
+	//public JLabel TestName=new JLabel();
+	public JLabel Testcode=new JLabel();
+	public JLabel Customerid=new JLabel();
+	
+
+	public JTextField Testidtext=new JTextField();
+	//public JTextField TestNametext=new JTextField();
+	public JTextField Testcodetext=new JTextField();
+	public JTextField Customeridtext=new JTextField();
+	
+	public JButton updateTest=new JButton();
+	public JButton Show=new JButton();
+	
+	
+public UpdateTest() throws HeadlessException 
+	{
+		
+		super();
+		interface8();
+	}
+	
+public void interface8()
+{
+	
+	
+	GoBacktoTest.setText("Back");
+	GoBacktoTest.setBounds(30,30,70,45);
+	
+	Testid.setText("Test Id:");
+	Testid.setBounds(50, 100, 100, 55);
+	Testidtext.setBounds(200, 100, 100, 55);
+	
+	//TestName.setText("Name:");
+	//TestName.setBounds(50, 220, 100, 55);
+	//TestNametext.setBounds(200,220,100,55);
+	
+	Testcode.setText("Test Code");
+	Testcode.setBounds(50, 220, 100, 55);
+	Testcodetext.setBounds(200,220,100,55);
+	
+	Customerid.setText("Customer id:");
+	Customerid.setBounds(50, 360, 100, 55);
+	Customeridtext.setBounds(200,360,100,55);
+	
+	
+	updateTest.setText("Update Test");
+	updateTest.setBounds(100,480,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,480,75,55);
+	this.setSize(800,800);
+	
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoTest);
+	this.add(Testid);
+	//this.add(TestName);
+	this.add(Testcode);
+	this.add(Customerid);
+	this.add(Testidtext);
+	//this.add(TestNametext);
+	this.add(Testcodetext);
+	this.add(Customeridtext);
+	this.add(updateTest);
+	this.add(Show);
+}
+
+
+public static void main(String[] args) 
+{
+	UpdateTest ui=new UpdateTest();
+}	
+
+
+}
