@@ -1,0 +1,55 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.DeleteCustomer;
+
+
+public class DeleteCustomer extends JFrame
+{
+       public JButton GoBacktoCustomer=new JButton();
+       public JLabel Customerid=new JLabel();
+       public JTextField Customeridtext=new JTextField();
+       public JButton Delete=new JButton();
+   	   public JButton Show=new JButton();
+   	
+   	
+   	
+public DeleteCustomer() throws HeadlessException 
+   		{
+   			
+   			super();
+   			interface5();
+   		}
+public void interface5()
+{
+	GoBacktoCustomer.setText("Back");
+	GoBacktoCustomer.setBounds(30,30,70,45);
+	
+	Customerid.setText("Cutomer Id:");
+	Customerid.setBounds(50, 100, 100, 55);
+	Customeridtext.setBounds(200, 100, 100, 55);
+	
+	Delete.setText("Delete");
+	Delete.setBounds(100,250,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,250,75,55);
+	
+	
+	this.setSize(550,550);
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoCustomer);
+	this.add(Customerid);
+	this.add(Customeridtext);
+	this.add(Delete);
+	this.add(Show);
+	
+}
+
+public static void main(String[] args) 
+{
+	DeleteCustomer ui=new DeleteCustomer();
+}
+
+}
