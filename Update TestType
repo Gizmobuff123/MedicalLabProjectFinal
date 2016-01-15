@@ -1,0 +1,92 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import java.awt.Window;
+
+import javax.swing.*;
+import Interfaces.UpdateTestType;
+
+
+public class UpdateTestType extends JFrame
+{
+public JButton GoBackToTestType=new JButton() ;
+	
+	
+	
+	public JLabel Testcode=new JLabel();
+	public JLabel testid=new JLabel();
+	public JLabel Discription=new JLabel();
+	public JLabel TestMethodid=new JLabel();
+	
+	
+	public JTextField Testcodetext=new JTextField();
+	public JTextField testidtext=new JTextField();
+	public JTextField Discriptiontext=new JTextField();
+	public JTextField Testmethodidtext=new JTextField();
+	
+	public JButton UpdateTestType=new JButton();
+	public JButton Show=new JButton();
+	
+	
+	public UpdateTestType() throws HeadlessException 
+	{
+		
+		super();
+		interface12();
+	}
+public void interface12()
+{
+	GoBackToTestType.setText("Back");
+	GoBackToTestType.setBounds(30,30,70,45);
+	
+	Testcode.setText("Test Id:");
+	Testcode.setBounds(50, 100, 100, 55);
+	Testcodetext.setBounds(200, 100, 100, 55);
+	
+	testid.setText("Test:");
+	testid.setBounds(50, 220, 100, 55);
+	testidtext.setBounds(200,220,100,55);
+	
+	Discription.setText("Discription");
+	Discription.setBounds(50, 360, 100, 55);
+	Discriptiontext.setBounds(200,360,100,55);
+	
+	TestMethodid.setText("Test Method");
+	TestMethodid.setBounds(50, 480, 100, 55);
+	Testmethodidtext.setBounds(200,480,100,55);
+	
+	
+	UpdateTestType.setText("Update");
+	UpdateTestType.setBounds(100,600,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,600,75,55);
+	this.setSize(800,800);
+	
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBackToTestType);
+	this.add(testid);
+	this.add(TestMethodid);
+	this.add(Testcode);
+	this.add(Discription);
+	this.add(testidtext);
+	this.add(Testcodetext);
+	this.add(Testcodetext);
+	this.add(Discriptiontext);
+	this.add(Testmethodidtext);
+	this.add(UpdateTestType);
+	this.add(Show);
+}
+
+
+public static void main(String[] args) 
+{
+	UpdateTestType ui=new UpdateTestType();
+}
+	
+	
+	
+
+}
