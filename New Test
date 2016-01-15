@@ -54,10 +54,10 @@ public void interface7()
 	
 	
 	AddTest.setText("Add Test");
-	AddTest.setBounds(100,650,85,55);
+	AddTest.setBounds(100,480,85,55);
 	
 	Show.setText("Show");
-	Show.setBounds(185,650,75,55);
+	Show.setBounds(185,480,75,55);
 	this.setSize(800,800);
 	
 	
