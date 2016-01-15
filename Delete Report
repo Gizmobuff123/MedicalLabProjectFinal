@@ -1,0 +1,55 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.DeleteReport;
+
+public class DeleteReport extends JFrame
+{
+    public JButton GoBacktoReport=new JButton();
+    public JLabel Reportid=new JLabel();
+    public JTextField Reportidtext=new JTextField();
+    public JButton Delete=new JButton();
+	   public JButton Show=new JButton();
+	
+	
+	
+public DeleteReport() throws HeadlessException 
+		{
+			
+			super();
+			interface17();
+		}
+public void interface17()
+{
+	GoBacktoReport.setText("Back");
+	GoBacktoReport.setBounds(30,30,70,45);
+	
+	Reportid.setText("Report Id:");
+	Reportid.setBounds(50, 100, 100, 55);
+	Reportidtext.setBounds(200, 100, 100, 55);
+	
+	Delete.setText("Delete");
+	Delete.setBounds(100,250,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,250,75,55);
+	
+	
+	this.setSize(550,550);
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoReport);
+	this.add(Reportid);
+	this.add(Reportidtext);
+	this.add(Delete);
+	this.add(Show);
+	
+}
+
+public static void main(String[] args) 
+{
+	DeleteReport ui=new DeleteReport();
+}
+
+
+}
