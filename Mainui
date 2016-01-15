@@ -1,0 +1,74 @@
+package Interfaces;
+import java.awt.HeadlessException;
+
+
+
+import javax.swing.*;
+
+import Interfaces.Mainui;
+
+public class Mainui extends JFrame
+{
+	public JLabel header=new JLabel();
+	public JButton Customer=new JButton();
+	public JButton Test=new JButton();
+	public JButton TestType=new JButton();
+	public JButton Objection=new JButton();
+	public JButton Report=new JButton();
+	public JButton DashBoard=new JButton();
+	public JButton TestMethod=new JButton();
+	
+	
+public Mainui() throws HeadlessException 
+	{
+		
+		super();
+		interface1();
+	}
+	
+public void interface1()
+{
+	header.setText("XYZ Medical Lab");
+	header.setBounds(375, 175, 150, 150);
+
+	Customer.setText("Cutomer");
+	Customer.setBounds(375,300,100,55);
+	
+	Test.setText("Test");
+	Test.setBounds(300,400,100,55);
+	
+	TestType.setText("TestType");
+	TestType.setBounds(300,500,100,55);
+
+	Objection.setText("Objection");
+	Objection.setBounds(300,600,100,55);
+
+	Report.setText("Report");
+	Report.setBounds(450,400,100,55);
+
+	DashBoard.setText("DashBoard");
+	DashBoard.setBounds(450,500,100,55);
+
+	TestMethod.setText("TestMethod");
+	TestMethod.setBounds(450,600,100,55);
+	this.setSize(800,800);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(header);
+	this.add(Customer);
+	this.add(Test);
+	this.add(TestType);
+	this.add(Objection);
+	this.add(Report);
+	this.add(DashBoard);
+	this.add(TestMethod);
+}
+
+	public static void main(String[] args) 
+	{
+		Mainui ui=new Mainui();
+	}	
+
+}
