@@ -1,0 +1,77 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.NewReport;
+
+public class NewReport extends JFrame
+{
+	public JButton GoBackToReport =new JButton();
+	public JLabel Reportid=new JLabel();
+	public JLabel Discription=new JLabel();
+	public JLabel Testid= new JLabel();
+	
+	public JTextField Reportidtext=new JTextField();
+	public JTextField Discriptiontext=new JTextField();
+	public JTextField Testidtext=new JTextField();
+	
+	JButton AddReport=new JButton();
+	JButton Show=new JButton();
+	
+	
+	public NewReport() throws HeadlessException 
+	{
+		
+		super();
+		interface15();
+	}
+	
+public void interface15()
+{
+	GoBackToReport.setText("Back");
+	GoBackToReport.setBounds(30,30,70,45);
+
+    Reportid.setText("Report id");
+    Reportid.setBounds(50,100,100,55);
+    Reportidtext.setBounds(175,100,100,55);
+
+    Discription.setText("Discription");
+    Discription.setBounds(50,200,100,55);
+    Discriptiontext.setBounds(175,200,100,55);
+    
+    Testid.setText("Test id");
+    Testid.setBounds(50, 300, 100, 55);
+    Testidtext.setBounds(175,300,100,55);
+    
+    AddReport.setText("Ok");
+	AddReport.setBounds(100,400,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,400,75,55);
+	this.setSize(800,800);
+    
+    this.show();
+	this.setLayout(null);
+	this.add(GoBackToReport);
+	this.add(Reportid);
+	this.add(Discription);
+	this.add(Testid);
+	this.add(Reportidtext);
+	this.add(Discriptiontext);
+	this.add(Testidtext);
+	this.add(AddReport);
+	this.add(Show);
+
+}
+	
+	public static void main(String[] args) 
+	{
+		NewReport ui=new NewReport();
+	}	
+    		
+
+
+	
+	
+	
+
+}
