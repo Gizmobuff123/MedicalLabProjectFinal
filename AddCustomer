@@ -1,0 +1,115 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.AddCustomer;
+public class AddCustomer extends JFrame
+{
+    
+	public JButton GoBacktoCustomer=new JButton();
+	
+	
+	public JLabel Customerid=new JLabel();
+	public JLabel CustomerName=new JLabel();
+	public JLabel CAddress=new JLabel();
+	public JLabel CContactNo=new JLabel();
+	public JLabel CEmail=new JLabel();
+	public JLabel CCNIC=new JLabel();
+	public JLabel CBloodgroup=new JLabel();
+	
+	
+	public JTextField Customeridtext=new JTextField();
+	public JTextField CustomerNametext=new JTextField();
+	public JTextField CAddresstext=new JTextField();
+	public JTextField CContactNotext=new JTextField();
+	public JTextField CEmailtext=new JTextField();
+	public JTextField CCNICtext=new JTextField();
+	public JTextField CBloodgrouptext=new JTextField();
+	
+	public JButton ok=new JButton();
+	public JButton Show=new JButton();
+	
+	
+	
+	
+public AddCustomer() throws HeadlessException 
+	{
+		
+		super();
+		interface3();
+	}
+
+
+
+public void interface3()
+{
+	GoBacktoCustomer.setText("Back");
+	GoBacktoCustomer.setBounds(30,30,70,45);
+	
+	Customerid.setText("Id:");
+	Customerid.setBounds(50, 100, 100, 30);
+	Customeridtext.setBounds(200, 100, 100, 30);
+	
+	CustomerName.setText("Name:");
+	CustomerName.setBounds(50, 150, 100, 30);
+	CustomerNametext.setBounds(200,150,100,30);
+	
+	CAddress.setText("Address:");
+	CAddress.setBounds(50, 200, 100, 30);
+	CAddresstext.setBounds(200,200,100,30);
+	
+	CContactNo.setText("Contact No:");
+	CContactNo.setBounds(50, 250, 100, 30);
+	CContactNotext.setBounds(200,250,100,30);
+	
+	CEmail.setText("Email:");
+	CEmail.setBounds(50, 300, 100, 30);
+	CEmailtext.setBounds(200,300,100,30);
+	
+	CCNIC.setText("CNIC:");
+	CCNIC.setBounds(50, 350, 100, 30);
+	CCNICtext.setBounds(200,350,100,30);
+	
+	CBloodgroup.setText("Bloodgroup");
+	CBloodgroup.setBounds(50,400,100,30);
+	CBloodgrouptext.setBounds(200,400,100,30);
+	
+	ok.setText("Ok");
+	ok.setBounds(100,450,50,55);
+	
+	Show.setText("Show");
+	Show.setBounds(150,450,75,55);
+	
+	
+	
+	this.setSize(550,550);
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoCustomer);
+	this.add(Customerid);
+	this.add(CustomerName);
+	this.add(CAddress);
+	this.add(CContactNo);
+	this.add(CEmail);
+	this.add(CCNIC);
+	this.add(CBloodgroup);
+	this.add(Customeridtext);
+	this.add(CustomerNametext);
+	this.add(CAddresstext);
+	this.add(CContactNotext);
+	this.add(CEmailtext);
+	this.add(CCNICtext);
+	this.add(CBloodgrouptext);
+	this.add(ok);
+	this.add(Show);
+	
+}
+
+
+
+public static void main(String[] args) 
+{
+	AddCustomer ui=new AddCustomer();
+}
+
+
+}
