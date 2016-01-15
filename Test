@@ -1,0 +1,55 @@
+package Interfaces;
+
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.Test;
+public class Test extends JFrame
+{
+
+	public JButton GoBacktoMainui=new JButton();
+	public JButton AddTest=new JButton();
+	public JButton UpdateTest=new JButton();
+	public JButton DeleteTest=new JButton();
+	
+	
+public Test() throws HeadlessException 
+	{
+		
+		super();
+		interface6();
+	}
+public void interface6()
+{
+	
+	GoBacktoMainui.setText("Back");
+	GoBacktoMainui.setBounds(30,30,70,45);
+	
+	AddTest.setText("New Test");
+	AddTest.setBounds(150,100,150,55);
+	
+	UpdateTest.setText("Update Test");
+	UpdateTest.setBounds(150,200,150,55);
+	
+	DeleteTest.setText("Delete Test Record");
+	DeleteTest.setBounds(150,300,150,55);
+	this.setSize(410,410);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoMainui);
+	this.add(AddTest);
+	this.add(UpdateTest);
+	this.add(DeleteTest);
+}
+	
+
+
+
+
+	
+	public static void main(String[] args) 
+	{
+		Test ui=new Test();
+	}	
+}
