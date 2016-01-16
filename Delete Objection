@@ -1,75 +1,59 @@
 package Interfaces;
 import java.awt.HeadlessException;
 import javax.swing.*;
-import Interfaces.UpdateObjction;
+import Interfaces.DeleteObjection;
 
-public class UpdateObjction extends JFrame
+public class DeleteObjection extends JFrame
 {
-	public JButton GoBackToObjction =new JButton();
-	public JLabel Objctionid=new JLabel();
-	public JLabel Customerid= new JLabel();
-	public JLabel Discription=new JLabel();
+	public JButton GoBackToObjection =new JButton();
+	public JLabel Objectionid=new JLabel();
+
+	public JTextField Objectionidtext=new JTextField();
 	
-	
-	public JTextField Objctionidtext=new JTextField();
-	public JTextField Customeridtext=new JTextField();
-	public JTextField Discriptiontext=new JTextField();
-	
-	
-	JButton UpdateObjction=new JButton();
+	JButton DeleteObjection=new JButton();
 	JButton Show=new JButton();
 	
-	
-	public UpdateObjction() throws HeadlessException 
+public DeleteObjection() throws HeadlessException 
 	{
 		
 		super();
-		interface20();
+		interface21();
 	}
-	
-public void interface20()
+
+public void interface21()
 {
-	GoBackToObjction.setText("Back");
-	GoBackToObjction.setBounds(30,30,70,45);
+	GoBackToObjection.setText("Back");
+	GoBackToObjection.setBounds(30,30,70,45);
 
-    Objctionid.setText("Objection id");
-    Objctionid.setBounds(50,100,100,55);
-    Objctionidtext.setBounds(175,100,100,55);
-
-    Customerid.setText("Customer id");
-    Customerid.setBounds(50,200,100,55);
-    Customeridtext.setBounds(175,200,100,55);
+    Objectionid.setText("Objection id");
+    Objectionid.setBounds(50,100,100,55);
+    Objectionidtext.setBounds(175,100,100,55);
     
-    Discription.setText("Description id");
-    Discription.setBounds(50, 300, 100, 55);
-    Discriptiontext.setBounds(175,300,100,55);
-    
-    UpdateObjction.setText("Update");
-	UpdateObjction.setBounds(100,400,85,55);
+    DeleteObjection.setText("Delete");
+	DeleteObjection.setBounds(100,200,85,55);
 	
 	Show.setText("Show");
-	Show.setBounds(185,400,75,55);
-	this.setSize(800,800);
+	Show.setBounds(185,200,75,55);
+	this.setSize(400,400);
     
-    this.show();
-	this.setLayout(null);
-	this.add(GoBackToObjction);
-	this.add(Objctionid);
-	this.add(Customerid);
-	this.add(Discription);
-	this.add(Objctionidtext);
-	this.add(Customeridtext);
-	this.add(Discriptiontext);
-	this.add(UpdateObjction);
-	this.add(Show);
-
-}
 	
-	public static void main(String[] args) 
-	{
-		UpdateObjction ui=new UpdateObjction();
-	}	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBackToObjection);
+	this.add(Objectionid);
+	this.add(Objectionidtext);
+	this.add(DeleteObjection);
+	this.add(Show);
+    
+    
+}
 
+public static void main(String[] args) 
+{
+	DeleteObjection ai=new DeleteObjection();
+}	
+
+	
 	
 
 }
