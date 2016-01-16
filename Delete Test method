@@ -1,0 +1,58 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.DeleteTestmethod;
+
+public class DeleteTestmethod extends JFrame
+{
+	public JButton GoBackToTestMethod =new JButton();
+	public JLabel TestMethodid=new JLabel();
+
+	public JTextField TestMethodidtext=new JTextField();
+	
+	JButton DeleteTestMethod=new JButton();
+	JButton Show=new JButton();
+	
+public DeleteTestmethod() throws HeadlessException 
+	{
+		
+		super();
+		interface25();
+	}
+
+public void interface25()
+{
+	GoBackToTestMethod.setText("Back");
+	GoBackToTestMethod.setBounds(30,30,70,45);
+
+	TestMethodid.setText("Test Method id");
+	TestMethodid.setBounds(50,100,100,55);
+	TestMethodidtext.setBounds(175,100,100,55);
+    
+	DeleteTestMethod.setText("Delete");
+	DeleteTestMethod.setBounds(100,200,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,200,75,55);
+	this.setSize(400,400);
+    
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBackToTestMethod);
+	this.add(TestMethodid);
+	this.add(TestMethodidtext);
+	this.add(DeleteTestMethod);
+	this.add(Show);
+    
+    
+}
+
+public static void main(String[] args) 
+{
+	DeleteTestmethod bi=new DeleteTestmethod();
+}	
+
+	
+
+}
