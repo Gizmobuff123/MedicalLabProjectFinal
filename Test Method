@@ -1,0 +1,57 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.TestMethod;
+
+public class TestMethod extends JFrame 
+{
+	public JButton GoBacktoMainui=new JButton();
+	public JButton AddTestMethod=new JButton();
+	public JButton UpdateTestMethod=new JButton();
+	public JButton DeleteTestMethod=new JButton();
+	
+	
+public TestMethod() throws HeadlessException 
+	{
+		
+		super();
+		interface22();
+	}
+public void interface22()
+{
+	
+	GoBacktoMainui.setText("Back");
+	GoBacktoMainui.setBounds(30,30,70,45);
+	
+	AddTestMethod.setText("New Test Method");
+	AddTestMethod.setBounds(150,100,150,55);
+	
+	UpdateTestMethod.setText("Update Test Method");
+	UpdateTestMethod.setBounds(150,200,150,55);
+	
+	DeleteTestMethod.setText("Delete Test Method ");
+	DeleteTestMethod.setBounds(150,300,150,55);
+	this.setSize(510,510);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoMainui);
+	this.add(AddTestMethod);
+	this.add(UpdateTestMethod);
+	this.add(DeleteTestMethod);
+}
+	
+
+
+
+
+	
+	public static void main(String[] args) 
+	{
+		TestMethod si=new TestMethod();
+	}	
+
+
+
+}
