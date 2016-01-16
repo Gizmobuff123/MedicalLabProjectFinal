@@ -1,0 +1,63 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.NewTestMethod;
+public class NewTestMethod extends JFrame 
+{
+	public JButton GoBackToTestMethod =new JButton();
+	public JLabel TestMethodid=new JLabel();
+	public JLabel TestMethodName= new JLabel();
+	
+	public JTextField TestMethodidtext=new JTextField();
+	public JTextField TestMethodNametext=new JTextField();
+	
+	JButton AddNewTestMethod=new JButton();
+	JButton Show=new JButton();
+	
+	
+	
+public NewTestMethod() throws HeadlessException 
+	{
+		
+		super();
+		interface23();
+	}
+	
+public void interface23()
+{
+	GoBackToTestMethod.setText("Back");
+	GoBackToTestMethod.setBounds(30,30,70,45);
+
+	TestMethodid.setText("Objection id");
+	TestMethodid.setBounds(50,110,100,55);
+	TestMethodidtext.setBounds(200,100,100,55);
+
+    TestMethodName.setText("Test Method Name");
+    TestMethodName.setBounds(50,200,110,55);
+    TestMethodNametext.setBounds(200,200,100,55);
+    
+    AddNewTestMethod.setText("Ok");
+	AddNewTestMethod.setBounds(100,300,85,55);
+	
+	Show.setText("Show");
+	Show.setBounds(185,300,75,55);
+	this.setSize(400,400);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBackToTestMethod);
+	this.add(TestMethodid);
+	this.add(TestMethodName);
+	this.add(TestMethodidtext);
+	this.add(TestMethodNametext);
+	this.add(AddNewTestMethod);
+	this.add(Show);
+}
+
+
+public static void main(String[] args) 
+{
+	NewTestMethod ui=new NewTestMethod();
+}	
+}
