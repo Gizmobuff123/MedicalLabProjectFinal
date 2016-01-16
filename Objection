@@ -1,0 +1,56 @@
+package Interfaces;
+import java.awt.HeadlessException;
+import javax.swing.*;
+import Interfaces.Objection;
+
+public class Objection extends JFrame
+{
+	public JButton GoBacktoMainui=new JButton();
+	public JButton AddObjection=new JButton();
+	public JButton UpdateObjection=new JButton();
+	public JButton DeleteObjection=new JButton();
+	
+	
+public Objection() throws HeadlessException 
+	{
+		
+		super();
+		interface18();
+	}
+public void interface18()
+{
+	
+	GoBacktoMainui.setText("Back");
+	GoBacktoMainui.setBounds(30,30,70,45);
+	
+	AddObjection.setText("New Objection");
+	AddObjection.setBounds(150,100,150,55);
+	
+	UpdateObjection.setText("Update Objection");
+	UpdateObjection.setBounds(150,200,150,55);
+	
+	DeleteObjection.setText("Delete Objection ");
+	DeleteObjection.setBounds(150,300,150,55);
+	this.setSize(510,510);
+	
+	
+	this.show();
+	this.setLayout(null);
+	this.add(GoBacktoMainui);
+	this.add(AddObjection);
+	this.add(UpdateObjection);
+	this.add(DeleteObjection);
+}
+	
+
+
+
+
+	
+	public static void main(String[] args) 
+	{
+		Objection ai=new Objection();
+	}	
+
+
+}
