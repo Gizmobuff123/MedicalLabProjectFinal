@@ -1,0 +1,46 @@
+package businessHandler;
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JOptionPane;
+
+import medicalLabDao.ReportDao;
+import medicalLabEntities.Report;
+import userInterface.NewReportUI;
+
+
+
+public class NewReportHandler implements ActionListener 
+{
+	private NewReportUI nrui;
+	private ReportDao rDao;
+	
+	public NewReportHandler(NewReportUI nrui) 
+	{
+		super();
+		this.nrui = nrui;
+		rDao=new ReportDao();
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) 
+	{
+		// TODO Auto-generated method stub
+		if (e.getActionCommand().equals("Ok"))
+		{
+			Report r=new Report();
+			String strId=nrui.Reportidtext.getText();
+			int Id=Integer.parseInt(strId);
+			String des=nrui.Discriptiontext.getText();
+			String strtid=nrui.Testidtext.getText();
+			int tid=Integer.parseInt(strtid);
+			r.setReportId(Id);
+			r.setDescription(des);
+			r.setTestId(tid);
+			rDao.insert(r);
+			JOptionPane.showMessageDialog(null, "New Profile Created");	
+		}
+	}
+
+}
